@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Tienda Online Navidad y Juguetes WEB</title>
+    <style>
+        body {
+            background-color: rgb(224, 210, 210);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #fadddd;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos al mundo del juguete y productos navideños</h1>
+        <img width="150px" src="img/Logo tienda Online.jpg" alt="Logo de la tienda">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Juguetes.html">Juguetes</a></li>
+            <li><a href="articulos navideños.html">Articulos navideños</a></li>
+            <li><a href="consulta de producto.html">Consulta</a></li>
+            <li><a href="Sobre nosotros.html">Sobre nosotros</a></li>
+            <li><a href="contactenos.html">Contactenos</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="product-images">
+            <img width="100%" alt="carro de colores" src="img/carro de colores.png">
+            <img width="100%" alt="carro de emergencia" src="img/carro de emergencia.png">
+            <img width="100%" alt="set de muñecas" src="img/set de muñecas.png">
+        </div>
+        @media (max-width: 480px) {
+    .product-images {
+        display: none; /* Ocultar las imágenes en pantallas pequeñas */
+    }
+}
+        <h1>Validacion de autenticidad de usuario</h1>
+        <p>
+            <label for="nombre_usuario">Nombre usuario:</label>
+            <input type="text" id="nombre_usuario"><br>
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña"><br>
+        </p>
+        <h1>Iniciar sesión</h1>
+    </div>
+</body>
+</html>
